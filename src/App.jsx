@@ -5,7 +5,6 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import LogIn from "./pages/LogIn";
 import LogIn1 from "./pages/LogIn1";
 import UpdateContract from "./pages/UpdateContract";
 import SignUp from "./pages/SignUp";
@@ -31,19 +30,19 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/log-in":
+      case "/login":
         title = "";
         metaDescription = "";
         break;
-      case "/update-contract":
+      case "/updateContract":
         title = "";
         metaDescription = "";
         break;
-      case "/sign-up":
+      case "/signup":
         title = "";
         metaDescription = "";
         break;
-      case "/new-contract":
+      case "/newContract":
         title = "";
         metaDescription = "";
         break;
@@ -65,11 +64,10 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<LogIn />} />
-      <Route path="/log-in" element={<LogIn1 />} />
-      <Route path="/update-contract" element={<UpdateContract />} />
-      <Route path="/sign-up" element={<SignUp />} />
-      <Route path="/new-contract" element={<NewContract />} />
+      <Route path="/" element={<LogIn1 />} />
+      <Route path="/signup" element={<SignUp />} />
+      <Route path="/updateContract" element={<UpdateContract />} />
+      <Route path="/newContract" element={<NewContract />} />
     </Routes>
   );
 }
