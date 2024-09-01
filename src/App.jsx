@@ -9,6 +9,7 @@ import LogIn1 from "./pages/LogIn1";
 import UpdateContract from "./pages/UpdateContract";
 import SignUp from "./pages/SignUp";
 import NewContract from "./pages/NewContract";
+import Home from "./pages/Home";
 
 function App() {
   const action = useNavigationType();
@@ -46,6 +47,10 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+      case "/home":
+        title = "";
+        metaDescription = "";
+        break;
     }
 
     if (title) {
@@ -68,6 +73,7 @@ function App() {
       <Route path="/signup" element={<SignUp />} />
       <Route path="/updateContract" element={<UpdateContract />} />
       <Route path="/newContract" element={<NewContract />} />
+      <Route path="/home" element={<Home />} />
     </Routes>
   );
 }

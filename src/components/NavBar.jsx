@@ -16,7 +16,7 @@ const Navbar = () => {
         {/* Navigation Links (Centered) */}
         <div className="flex-grow text-center">
           <div className="flex justify-center space-x-8">
-            <a href="/" className="font-semibold  hover:text-green-900">
+            <a href="/home" className="font-semibold  hover:text-green-900">
               Home
             </a>
             <a
