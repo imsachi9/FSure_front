@@ -10,6 +10,7 @@ import UpdateContract from "./pages/UpdateContract";
 import SignUp from "./pages/SignUp";
 import NewContract from "./pages/NewContract";
 import Home from "./pages/Home";
+import Marketplace from "./pages/Marketplace";
 
 function App() {
   const action = useNavigationType();
@@ -51,6 +52,10 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+      case "/marketplace":
+        title = "";
+        metaDescription = "";
+        break;
     }
 
     if (title) {
@@ -72,6 +77,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<LogIn1 />} />
       <Route path="/signup" element={<SignUp />} />
+      <Route path="/marketplace" element={<Marketplace />} />
       <Route path="/updateContract" element={<UpdateContract />} />
       <Route path="/newContract" element={<NewContract />} />
     </Routes>

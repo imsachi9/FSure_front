@@ -10,6 +10,7 @@ import PropTypes from "prop-types";
 const FAQs = ({ className = "" }) => {
   return (
     <div
+      id="faqs"
       className={`w-full flex flex-row items-center justify-center py-8 px-4 box-border text-left text-lg text-[#eec044] font-['Covered_By_Your_Grace'] ${className}`}
       style={{
         backgroundImage: "url('/sketch_house.png')",
@@ -22,12 +23,12 @@ const FAQs = ({ className = "" }) => {
         {/* FAQs Section */}
         <div className="w-full max-w-md flex flex-col gap-3 mb-10">
           <div className="text-left mb-6">
-            <h2 className="text-base font-normal leading-6 text-[#eec044]">
+            <h2 className="text-13xl font-normal mb-0">
               Frequently Asked Questions
             </h2>
-            <h1 className="text-3xl font-semibold font-[Poppins] text-[#1a1a1a]">
+            <div className="text-14xl-3 font-semibold font-[Poppins] text-[#002603]">
               Let’s Talk About FarmSure and You!
-            </h1>
+            </div>
           </div>
           <Accordion
             className="!m-0"
@@ -63,69 +64,81 @@ const FAQs = ({ className = "" }) => {
             }}
           >
             <AccordionSummary expandIcon={<Icon>expand_more</Icon>}>
-              <Typography>2. How does FarmSure work?</Typography>
+              <Typography>
+                2. How does FarmSure ensure stable income for farmers?
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                FarmSure allows farmers to create and manage contracts with
-                buyers. These contracts are secured by blockchain technology,
-                ensuring transparency and security.
+                FarmSure uses smart contracts to establish secure, transparent,
+                and enforceable agreements between farmers and buyers, reducing
+                financial risks and ensuring consistent and timely payments for
+                their produce.
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion className="!m-0"
-          sx={{
+          <Accordion
+            className="!m-0"
+            sx={{
               borderRadius: "10px",
               border: "1px solid #66bb6a",
               "&:before": {
                 display: "none",
               },
-            }}>
+            }}
+          >
             <AccordionSummary expandIcon={<Icon>expand_more</Icon>}>
-              <Typography>3. What are the benefits for farmers?</Typography>
+              <Typography>3. How does FarmSure benefit buyers?</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Farmers benefit from direct access to buyers, stable income, and
-                secure transactions through smart contracts.
+                Buyers gain direct access to fresh produce from farmers,
+                ensuring quality, fair pricing, and secure transactions through
+                our blockchain-based system.
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion className="!m-0"
-          sx={{
+          <Accordion
+            className="!m-0"
+            sx={{
               borderRadius: "10px",
               border: "1px solid #66bb6a",
               "&:before": {
                 display: "none",
               },
-            }}>
+            }}
+          >
             <AccordionSummary expandIcon={<Icon>expand_more</Icon>}>
-              <Typography>4. How can I sign up for FarmSure?</Typography>
+              <Typography>4. Can I negotiate prices on FarmSure?</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                You can sign up by visiting our website and filling out the
-                registration form. Once verified, you can start creating
-                contracts.
+                Yes, FarmSure allows buyers and farmers to negotiate prices
+                directly within the platform. This feature provides flexibility
+                in reaching mutually agreeable terms before finalizing the smart
+                contract, ensuring both parties are satisfied with the
+                transaction.
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion className="!m-0"
-          sx={{
+          <Accordion
+            className="!m-0"
+            sx={{
               borderRadius: "10px",
               border: "1px solid #66bb6a",
               "&:before": {
                 display: "none",
               },
-            }}>
+            }}
+          >
             <AccordionSummary expandIcon={<Icon>expand_more</Icon>}>
-              <Typography>5. Is FarmSure free to use?</Typography>
+              <Typography>5. Is my personal data safe on FarmSure?</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                FarmSure offers free and premium plans. The free plan allows
-                basic access, while the premium plan provides additional
-                features for a fee.
+                We use advanced encryption and blockchain technology to ensure
+                your personal and transactional data remains safe and secure at
+                all times.
               </Typography>
             </AccordionDetails>
           </Accordion>

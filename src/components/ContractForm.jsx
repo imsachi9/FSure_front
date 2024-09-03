@@ -37,13 +37,6 @@ const ContractForm = memo(({ className = "" }) => {
           />
         </div>
 
-        <div className="rounded-xl bg-white border border-primary w-full h-12 flex items-center mb-4">
-          <input
-            className="w-full bg-transparent text-black-600 outline-none px-4"
-            placeholder="Email"
-            type="email"
-          />
-        </div>
         <div className="flex">
           <div className="rounded-xl bg-white border border-primary w-full h-12 flex items-center mb-4">
             <input

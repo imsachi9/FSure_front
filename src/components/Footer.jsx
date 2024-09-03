@@ -20,6 +20,7 @@ const Footer = ({
 
   return (
     <footer
+      id="about-us"
       className={`relative w-full bg-[url('/public/footer@3x.png')] bg-cover bg-no-repeat text-left text-sm text-gainsboro font-outfit ${className}`}
       style={footerStyle}
     >

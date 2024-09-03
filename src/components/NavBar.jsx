@@ -28,10 +28,10 @@ const Navbar = () => {
             <a href="/profile" className="font-semibold hover:text-green-900">
               Profile
             </a>
-            <a href="/about-us" className="font-semibold hover:text-green-900">
+            <a href="#about-us" className="font-semibold hover:text-green-900">
               About Us
             </a>
-            <a href="/faqs" className="font-semibold hover:text-green-900">
+            <a href="#faqs" className="font-semibold hover:text-green-900">
               FAQs
             </a>
           </div>

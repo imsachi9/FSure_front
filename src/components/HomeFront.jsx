@@ -23,9 +23,14 @@ const HomeFront = ({ className }) => {
           smart contracts and secure payments.
         </p>
         <div className="mt-8 flex justify-center items-center gap-4">
-          <button className="bg-[#4baf47] hover:bg-[#30962e] text-white font-medium py-2 px-6 rounded-full text-[0.875rem]">
-            Learn More
-          </button>
+          <a href="/marketplace">
+            <button
+              className="bg-[#4baf47] hover:bg-[#30962e] text-white font-medium py-2 px-6 rounded-full text-[0.875rem]"
+              style={{ cursor: "url('/thumb_icon.png'), pointer" }}
+            >
+              Search for something
+            </button>
+          </a>
           <img
             className="w-[3rem] h-[3rem] object-contain"
             src="/leaf.png"
