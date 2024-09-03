@@ -11,6 +11,7 @@ import SignUp from "./pages/SignUp";
 import NewContract from "./pages/NewContract";
 import Home from "./pages/Home";
 import Marketplace from "./pages/Marketplace";
+import Profile from "./pages/Profile";
 
 function App() {
   const action = useNavigationType();
@@ -77,6 +78,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<LogIn1 />} />
       <Route path="/signup" element={<SignUp />} />
+      <Route path="/profile" element={<Profile />} />
       <Route path="/marketplace" element={<Marketplace />} />
       <Route path="/updateContract" element={<UpdateContract />} />
       <Route path="/newContract" element={<NewContract />} />

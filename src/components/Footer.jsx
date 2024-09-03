@@ -66,10 +66,10 @@ const Footer = ({
             <a href="/profile" className="text-white hover:underline">
               Profile
             </a>
-            <a href="/about-us" className="text-white hover:underline">
+            <a href="#about-us" className="text-white hover:underline">
               About Us
             </a>
-            <a href="/faqs" className="text-white hover:underline">
+            <a href="#faqs" className="text-white hover:underline">
               FAQs
             </a>
           </div>
