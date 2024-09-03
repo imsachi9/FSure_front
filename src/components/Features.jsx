@@ -4,18 +4,18 @@ import PropTypes from "prop-types";
 const Features = ({ className = "" }) => {
   return (
     <div
-      className={`relative w-full flex flex-col items-center justify-start py-12 px-4 gap-6 text-center text-lg text-[#eec044] font-['Covered_By_Your_Grace'] ${className}`}
+      className={`relative w-full bg-[#f8f7f0] flex flex-col items-center justify-start pt-0 pb-24 px-0 gap-6 text-center text-lg text-[#eec044] font-['Covered_By_Your_Grace'] ${className}`}
     >
       {/* Background image container */}
       <div
-        className="absolute inset-x-0 top-0 w-full h-60 bg-cover bg-center bg-no-repeat z-[-1]"
+        className="absolute inset-x-0 bottom-0 w-full h-60 bg-cover bg-center bg-no-repeat z-[1]"
         style={{ backgroundImage: `url('/feature_bg.png')` }}
       ></div>
 
-      <div className="flex flex-col items-center gap-6 max-w-full px-4 mt-20">
+      <div className="flex flex-col items-center gap-6 max-w-full px-0 mt-1 z-[2]">
         {" "}
         {/* Added mt-20 to provide space above */}
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center">
           <h2 className="text-14xl-3 font-normal mb-0">Features</h2>
           <div className="text-14xl-3 font-semibold font-[Poppins] text-[#002603]">
             What do we offer?

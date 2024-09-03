@@ -20,7 +20,7 @@ const FAQs = ({ className = "" }) => {
     >
       <div className="flex flex-row items-center justify-center gap-12 max-w-7xl w-full px-4">
         {/* FAQs Section */}
-        <div className="w-full max-w-md flex flex-col gap-4">
+        <div className="w-full max-w-md flex flex-col gap-3 mb-10">
           <div className="text-left mb-6">
             <h2 className="text-base font-normal leading-6 text-[#eec044]">
               Frequently Asked Questions
@@ -29,9 +29,20 @@ const FAQs = ({ className = "" }) => {
               Let’s Talk About FarmSure and You!
             </h1>
           </div>
-          <Accordion>
+          <Accordion
+            className="!m-0"
+            sx={{
+              borderRadius: "10px",
+              border: "1px solid #66bb6a",
+              "&:before": {
+                display: "none",
+              },
+            }}
+          >
             <AccordionSummary expandIcon={<Icon>expand_more</Icon>}>
-              <Typography>1. What is FarmSure?</Typography>
+              <Typography className="tracking-wide">
+                1. What is FarmSure?
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
@@ -41,7 +52,16 @@ const FAQs = ({ className = "" }) => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion>
+          <Accordion
+            className="!m-0"
+            sx={{
+              borderRadius: "10px",
+              border: "1px solid #66bb6a",
+              "&:before": {
+                display: "none",
+              },
+            }}
+          >
             <AccordionSummary expandIcon={<Icon>expand_more</Icon>}>
               <Typography>2. How does FarmSure work?</Typography>
             </AccordionSummary>
@@ -53,7 +73,14 @@ const FAQs = ({ className = "" }) => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion>
+          <Accordion className="!m-0"
+          sx={{
+              borderRadius: "10px",
+              border: "1px solid #66bb6a",
+              "&:before": {
+                display: "none",
+              },
+            }}>
             <AccordionSummary expandIcon={<Icon>expand_more</Icon>}>
               <Typography>3. What are the benefits for farmers?</Typography>
             </AccordionSummary>
@@ -64,7 +91,14 @@ const FAQs = ({ className = "" }) => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion>
+          <Accordion className="!m-0"
+          sx={{
+              borderRadius: "10px",
+              border: "1px solid #66bb6a",
+              "&:before": {
+                display: "none",
+              },
+            }}>
             <AccordionSummary expandIcon={<Icon>expand_more</Icon>}>
               <Typography>4. How can I sign up for FarmSure?</Typography>
             </AccordionSummary>
@@ -76,7 +110,14 @@ const FAQs = ({ className = "" }) => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion>
+          <Accordion className="!m-0"
+          sx={{
+              borderRadius: "10px",
+              border: "1px solid #66bb6a",
+              "&:before": {
+                display: "none",
+              },
+            }}>
             <AccordionSummary expandIcon={<Icon>expand_more</Icon>}>
               <Typography>5. Is FarmSure free to use?</Typography>
             </AccordionSummary>

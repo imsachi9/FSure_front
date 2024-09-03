@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full h-20  bg-gray-800 text-gray-200 font-manrope flex items-center px-4">
+    <nav className="top-0 left-0 w-full h-20  bg-gray-800 text-gray-200 font-manrope flex items-center px-4 z-50">
       <div className="flex items-center justify-between w-full max-w-screen-xl mx-auto">
         {/* Logo */}
         <a href="/" className="flex-shrink-0">
@@ -16,7 +16,7 @@ const Navbar = () => {
         {/* Navigation Links (Centered) */}
         <div className="flex-grow text-center">
           <div className="flex justify-center space-x-8">
-            <a href="/home" className="font-semibold  hover:text-green-900">
+            <a href="/" className="font-semibold  hover:text-green-900">
               Home
             </a>
             <a

@@ -10,7 +10,7 @@ const SignUpForm = memo(({ className = "" }) => {
 
   return (
     <div
-      className={`relative bg-[url('/public/divelementorwidgetwrap@3x.png')] bg-cover bg-no-repeat bg-top rounded-xl text-center text-sm text-gray-200 font-manrope ${className} p-4 md:p-6 lg:p-8`}
+      className={`relative bg-[url('/public/divelementorwidgetwrap@3x.png')] bg-cover bg-no-repeat bg-top rounded-xl text-center text-sm text-gray-200 font-manrope ${className} p-4 md:p-6 lg:p-8 md:py-0`}
     >
       <form className="mx-auto max-w-md w-full p-6">
         <h1 className="text-3xl-5 font-extrabold text-gray-300 text-left mb-4">

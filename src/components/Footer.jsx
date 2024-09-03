@@ -12,69 +12,101 @@ const Footer = ({
   const footerStyle = useMemo(() => {
     return {
       top: footerTop,
+      // backgroundRepeat: "no-repeat",
+      // backgroundPosition: "right bottom",
+      // backgroundSize: "contain",
     };
   }, [footerTop]);
 
   return (
     <footer
-      className={`relative w-full bg-[url('/public/footer@3x.png')] bg-cover bg-no-repeat text-left text-[0.669rem] text-gainsboro font-outfit ${className}`}
+      className={`relative w-full bg-[url('/public/footer@3x.png')] bg-cover bg-no-repeat text-left text-sm text-gainsboro font-outfit ${className}`}
       style={footerStyle}
     >
-      <div className="container mx-auto w-full">
-        <div className="flex flex-wrap justify-between mt-10">
-          <div className="flex flex-col items-start pl-16 space-y-4 w-full md:w-1/4">
-            <div className="flex gap-4">
+      <div className="container mx-auto w-full py-10">
+        <div className="flex flex-wrap justify-between">
+          {/* Left Section */}
+          <div className="flex flex-col items-start pl-4 md:pl-16 space-y-4 w-full md:w-1/4">
+            <div className="flex items-center gap-4">
               <img
                 className="w-16 h-16"
-                alt=""
+                alt="Logo"
                 src="/link--logo--logo2xwhite1webp@2x.png"
               />
-              <div className="">
-                <h2 className="text-white  py-0 my-0 mt-4">FarmSure</h2>
-                <div className="text-white my-0 py-0">
+              <div>
+                <h2 className="text-white font-semibold text-lg mb-0">
+                  FarmSure
+                </h2>
+                <div className="text-white text-xs">
                   an agri-tech initiative
                 </div>
               </div>
             </div>
-
-            <p className="text-white">
+            <p className="text-white text-sm">
               Using cutting-edge tech to provide farmers a marketplace where
               they are in control of their crops.
             </p>
+            <a href="/signup">
+              <button className="bg-white text-[#264e36] rounded-full py-2 px-6 text-sm mt-4">
+                Create Account
+              </button>
+            </a>
           </div>
-          <div className="flex flex-col items-center space-y-1 w-full md:w-1/4">
-            <h2 className="text-lg  text-gray-100 my-0 ">Explore</h2>
-            <div className="text-white ">Home</div>
-            <p className="text-white ">MarketPlace</p>
-            <p className="text-white ">Profile</p>
-            <p className="text-white ">About Us</p>
-            <a className="text-white " href="/faqs">
+
+          {/* Explore Section */}
+          <div className="flex flex-col items-start space-y-2 w-full md:w-1/6 mt-8 md:mt-0 md:ml-20">
+            <h2 className="text-lg text-white mb-2">Explore</h2>
+            <a href="/" className="text-white hover:underline">
+              Home
+            </a>
+            <a href="/marketplace" className="text-white hover:underline">
+              MarketPlace
+            </a>
+            <a href="/profile" className="text-white hover:underline">
+              Profile
+            </a>
+            <a href="/about-us" className="text-white hover:underline">
+              About Us
+            </a>
+            <a href="/faqs" className="text-white hover:underline">
               FAQs
             </a>
           </div>
-          <div className="flex flex-col items-center space-y-1 w-full md:w-1/4">
-            <h2 className="text-lg my-0 text-gray-100">Milestones</h2>
-            <img className="w-48" alt="" src="/frame-6.svg" />
-            <img className="w-48" alt="" src="/frame-8.svg" />
+
+          {/* Milestones Section */}
+          <div className="flex flex-col items-start space-y-2 w-full md:w-1/4 mt-8 md:mt-0 md:ml-8">
+            <h2 className="text-lg text-white">Milestones</h2>
+            <img className="w-48" alt="Milestone 1" src="/frame-6.svg" />
+            <img className="w-48 mt-4" alt="Milestone 2" src="/frame-8.svg" />
           </div>
-          <div className="items-center space-y-3 w-full md:w-1/4">
-            <h2 className="text-lg my-0 text-center text-gray-100">
-              Contact Info
-            </h2>
+
+          {/* Contact Info Section */}
+          <div className="flex flex-col items-start space-y-4 w-full md:w-1/4 mt-8 md:mt-0 md:ml-[-2rem] md:mr-5">
+            <h2 className="text-lg text-white">Contact Info</h2>
             <div className="flex items-center space-x-2">
-              <img className="w-8 h-8" alt="" src="/list--item.svg" />
+              <img
+                className="w-8 h-8"
+                alt="Address Icon"
+                src="/list--item.svg"
+              />
               <div>
-                <div className="text-yellow-500  uppercase">Address:</div>
-                <div className="text-white">
+                <div className="text-yellow-500 uppercase text-xs">
+                  Address:
+                </div>
+                <div className="text-white text-sm">
                   Heritage Institute of Technology, Anandapur, Kolkata
                 </div>
               </div>
             </div>
             <div className="flex items-center space-x-2">
-              <img className="w-8 h-8" alt="" src="/list--item1.svg" />
+              <img
+                className="w-8 h-8"
+                alt="Email Icon"
+                src="/list--item1.svg"
+              />
               <div>
-                <div className="text-yellow-500 uppercase">Email:</div>
-                <div className="text-white">
+                <div className="text-yellow-500 uppercase text-xs">Email:</div>
+                <div className="text-white text-sm">
                   <a
                     href="mailto:sachin.kumar.cse26@heritageit.edu.in"
                     className="text-white hover:text-blue-300 underline"
@@ -86,10 +118,9 @@ const Footer = ({
             </div>
           </div>
         </div>
-        <div className="text-center text-lightgray leading-6 my-5 mt-7">
-          <span>
-            <span className="font-semibold text-xl">{`© Copyright 2024. All Rights Reserved by `}</span>
-            <span className="font-semibold">Team FarmSure ☘️✨</span>
+        <div className="text-center text-lightgray leading-6 mt-10">
+          <span className="font-semibold text-sm">
+            © Copyright 2024. All Rights Reserved by Team FarmSure ☘✨
           </span>
         </div>
       </div>

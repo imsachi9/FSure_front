@@ -69,11 +69,11 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<LogIn1 />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<LogIn1 />} />
       <Route path="/signup" element={<SignUp />} />
       <Route path="/updateContract" element={<UpdateContract />} />
       <Route path="/newContract" element={<NewContract />} />
-      <Route path="/home" element={<Home />} />
     </Routes>
   );
 }

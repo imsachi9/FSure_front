@@ -31,9 +31,9 @@ const BlogCard = ({
       className={`bg-white rounded-md shadow-md flex flex-col items-start justify-between p-4 text-left text-sm text-[#002603] font-[Poppins] ${className}`}
       style={blogCardStyle}
     >
-      <div className="flex flex-col items-start">
+      <div className="flex flex-col items-start w-full h-[200px] max-w-full">
         <img
-          className="w-full h-48 rounded-md object-cover"
+          className="w-full h-full rounded-md object-cover"
           loading="lazy"
           alt=""
           src={image2}
